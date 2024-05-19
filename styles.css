@@ -80,3 +80,59 @@ button:hover {
     color: #000; /* 設置結果文字顏色為深色，以確保清晰可見 */
     font-size: 24px; /* 增大結果顯示的字體大小 */
 }
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;  /* 設置每個輸入組之間的間距 */
+}
+
+.input-group label {
+    flex: 0 0 150px;  /* 給標籤一個固定的寬度 */
+    margin-right: 10px;  /* 設置標籤和輸入欄位之間的間距 */
+    color: #333;  /* 深色文字，提高可讀性 */
+    font-size: 22px;  /* 增加標籤的字體大小 */
+}
+
+.input-group input,
+.input-group select {
+    flex: 1;  /* 讓輸入欄位填滿剩餘空間 */
+    padding: 8px;  /* 調整內邊距以適應更大的字體 */
+    font-size: 22px;  /* 增加輸入欄位的字體大小 */
+    color: #333;  /* 確保輸入欄位文字也是深色 */
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.calculator h2 {
+    margin-top: 0;
+    font-size: 24px;  /* 對標題也進行適當的字體增加 */
+}
+
+/* 增加容器的整體寬度以適應側邊標籤 */
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}

@@ -18,11 +18,20 @@
 
                 <!-- 止盈止損計算 -->
                 <div class="calculator">
-                    <h2>&#x1F4B5止盈止損計算</h2>
+                    <h2>&#x1F4B5 止盈止損計算</h2>
                     <form id="profitLossForm">
-                        <input type="number" id="coin_quantity" placeholder="幣數量" required>
-                        <input type="number" id="entry_price" placeholder="開倉價格" required>
-                        <input type="number" id="exit_price" placeholder="出場價格" required>
+                        <div class="input-group">
+                            <label for="coin_quantity">幣數量</label>
+                            <input type="number" id="coin_quantity" step="0.00001" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="entry_price">開倉價格</label>
+                            <input type="number" id="entry_price" step="0.00001" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="exit_price">出場價格</label>
+                            <input type="number" id="exit_price" step="0.00001" required>
+                        </div>
                         <select id="direction">
                             <option value="long">做多&#x2B06</option>
                             <option value="short">做空&#x2B07</option>
@@ -34,12 +43,24 @@
 
                 <!-- +加倉成本計算+ -->
                 <div class="calculator">
-                    <h2>&#43倉成本計算</h2>
+                    <h2>&#43; 倉成本計算</h2>
                     <form id="averageCostForm">
-                        <input type="number" id="current_eth_quantity" placeholder="當前持有幣數量" required>
-                        <input type="number" id="current_average_price" placeholder="當前的開倉均價" required>
-                        <input type="number" id="additional_eth_quantity" placeholder="新購買幣數量" required>
-                        <input type="number" id="purchase_price" placeholder="新購買幣的價格" required>
+                        <div class="input-group">
+                            <label for="current_eth_quantity">當前持有幣數量</label>
+                            <input type="number" id="current_eth_quantity" step="0.00001" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="current_average_price">當前的開倉均價</label>
+                            <input type="number" id="current_average_price" step="0.00001" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="additional_eth_quantity">新購買幣數量</label>
+                            <input type="number" id="additional_eth_quantity" step="0.00001" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="purchase_price">新購買幣的價格</label>
+                            <input type="number" id="purchase_price" step="0.00001" required>
+                        </div>
                         <button type="submit">Calculate</button>
                     </form>
                     <p id="averageCostResult"></p>
