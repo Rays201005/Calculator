@@ -1,0 +1,82 @@
+body {
+    background: none; /* 移除整體背景圖 */
+    color: #fff; /* 確保文字可讀性 */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container {
+    flex: 1;  /* 佔據一半寬度 */
+    background: url('background.jpg') no-repeat center center; /* 確保路徑正確 */
+    background-size: cover;
+}
+
+.calculator-container {
+    flex: 1;  /* 佔據另一半寬度 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* 輕灰色背景，增加設計感同時與大多數圖片協調 */
+}
+
+.container {
+    background-color: #ffffff; /* 白色背景提升內容區域的清晰度 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1, h2 {
+    color: #333333; /* 深灰色文字，更符合專業感 */
+}
+
+.calculator {
+    background-color: #eeeeee; /* 略深於容器的灰色，為界面層次添加微妙的區分 */
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+    background-color: #ddd; /* 輸入框和按鈕使用統一的淡灰色背景 */
+    color: #333; /* 文字顏色 */
+    font-size: 24px; /* 更新字體大小為24px */
+}
+
+button {
+    background-color: #555; /* 深灰色按鈕背景 */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333; /* 鼠標懸停時更深的灰色 */
+}
+
+#profitLossResult, #averageCostResult {
+    color: #000; /* 設置結果文字顏色為深色，以確保清晰可見 */
+    font-size: 24px; /* 增大結果顯示的字體大小 */
+}

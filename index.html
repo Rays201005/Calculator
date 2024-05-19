@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-container">
+            <!-- 圖片作為背景顯示，確保已經在 styles.css 中設置了背景圖片 -->
+        </div>
+        <div class="calculator-container">
+            <div class="container">
+                <h1>Trading Calculators</h1>
+
+                <!-- 止盈止損計算 -->
+                <div class="calculator">
+                    <h2>&#x1F4B5止盈止損計算</h2>
+                    <form id="profitLossForm">
+                        <input type="number" id="coin_quantity" placeholder="幣數量" required>
+                        <input type="number" id="entry_price" placeholder="開倉價格" required>
+                        <input type="number" id="exit_price" placeholder="出場價格" required>
+                        <select id="direction">
+                            <option value="long">做多&#x2B06</option>
+                            <option value="short">做空&#x2B07</option>
+                        </select>
+                        <button type="submit">Calculate</button>
+                    </form>
+                    <p id="profitLossResult"></p>
+                </div>
+
+                <!-- +加倉成本計算+ -->
+                <div class="calculator">
+                    <h2>&#43倉成本計算</h2>
+                    <form id="averageCostForm">
+                        <input type="number" id="current_eth_quantity" placeholder="當前持有幣數量" required>
+                        <input type="number" id="current_average_price" placeholder="當前的開倉均價" required>
+                        <input type="number" id="additional_eth_quantity" placeholder="新購買幣數量" required>
+                        <input type="number" id="purchase_price" placeholder="新購買幣的價格" required>
+                        <button type="submit">Calculate</button>
+                    </form>
+                    <p id="averageCostResult"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
