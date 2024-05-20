@@ -26,11 +26,11 @@
                         </div>
                         <div class="input-group">
                             <label for="entry_price">開倉價格</label>
-                            <input type="number" id="entry_price" step="0.00001" required>
+                            <input type="number" id="entry_price" step="0.0000001" required>
                         </div>
                         <div class="input-group">
-                            <label for="exit_price">出場價格</label>
-                            <input type="number" id="exit_price" step="0.00001" required>
+                            <label for="exit_price">止盈止損價</label>
+                            <input type="number" id="exit_price" step="0.0000001" required>
                         </div>
                         <select id="direction">
                             <option value="long">做多&#x2B06</option>
@@ -46,20 +46,20 @@
                     <h2>&#43; 倉成本計算</h2>
                     <form id="averageCostForm">
                         <div class="input-group">
-                            <label for="current_eth_quantity">當前持有幣數量</label>
+                            <label for="current_eth_quantity">幣數量</label>
                             <input type="number" id="current_eth_quantity" step="0.00001" required>
                         </div>
                         <div class="input-group">
-                            <label for="current_average_price">當前的開倉均價</label>
-                            <input type="number" id="current_average_price" step="0.00001" required>
+                            <label for="current_average_price">開倉均價</label>
+                            <input type="number" id="current_average_price" step="0.0000001" required>
                         </div>
                         <div class="input-group">
                             <label for="additional_eth_quantity">新購買幣數量</label>
                             <input type="number" id="additional_eth_quantity" step="0.00001" required>
                         </div>
                         <div class="input-group">
-                            <label for="purchase_price">新購買幣的價格</label>
-                            <input type="number" id="purchase_price" step="0.00001" required>
+                            <label for="purchase_price">新購買幣價格</label>
+                            <input type="number" id="purchase_price" step="0.0000001" required>
                         </div>
                         <button type="submit">Calculate</button>
                     </form>
