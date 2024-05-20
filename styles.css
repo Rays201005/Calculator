@@ -87,11 +87,12 @@ button:hover {
 .input-group {
     display: flex;
     align-items: center;
+    width: 100%; /* 確保輸入組填滿父元素寬度 */
     margin-bottom: 10px;  /* 設置每個輸入組之間的間距 */
 }
 
 .input-group label {
-    flex: 0 0 150px;  /* 給標籤一個固定的寬度 */
+    flex: 1; /* 讓標籤和輸入框平分寬度 */
     margin-right: 10px;  /* 設置標籤和輸入欄位之間的間距 */
     color: #fff;  /* 白色文字 */
     font-size: 22px;  /* 增加標籤的字體大小 */

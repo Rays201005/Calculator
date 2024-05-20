@@ -22,7 +22,7 @@ document.getElementById('profitLossForm').addEventListener('submit', function(ev
     const direction = document.getElementById('direction').value;
 
     const { pnl, breakevenPrice } = calculateTradeInfo(coinQuantity, entryPrice, exitPrice, direction);
-    document.getElementById('profitLossResult').textContent = `盈虧: $${pnl.toFixed(2)} , 損益平衡價格: ${breakevenPrice.toFixed(7)}`;
+    document.getElementById('profitLossResult').textContent = `Profit&Loss: $${pnl.toFixed(2)}  ,  Breakeven Price: ${breakevenPrice.toFixed(7)}`;
 });
 
 // 加倉成本計算邏輯
@@ -43,5 +43,5 @@ document.getElementById('averageCostForm').addEventListener('submit', function(e
     const purchasePrice = parseFloat(document.getElementById('purchase_price').value);
 
     const newAveragePrice = calculateNewAveragePrice(currentEthQuantity, currentAveragePrice, additionalEthQuantity, purchasePrice);
-    document.getElementById('averageCostResult').textContent = `損益平衡均價: ${newAveragePrice.toFixed(7)}`;
+    document.getElementById('averageCostResult').textContent = `Breakeven average price: ${newAveragePrice.toFixed(7)}`;
 });
