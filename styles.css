@@ -16,7 +16,7 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    overflow: hidden; /* 防止內容超出容器範圍 */
+    overflow: auto; /* hidden防止內容超出容器範圍 */
 }
 
 .image-container {
@@ -64,6 +64,7 @@ input, select, button {
     background-color: #666; /* 中灰色背景 */
     color: #fff; /* 白色文字 */
     font-size: 24px; /* 更新字體大小為24px */
+    box-sizing: border-box; /* 新增此行 */
 }
 
 button {
@@ -133,7 +134,7 @@ button:hover {
 
 /* 增加容器的整體寬度以適應側邊標籤 */
 .container {
-    width: 80%;
+    width: 100%;
     max-width: 600px;
     margin: auto;
     padding: 20px;
@@ -141,7 +142,6 @@ button:hover {
 
 /* 對於桌面和大屏幕 */
 @media (min-width: 1024px) {
-    /* 你的桌面專用樣式 */
     .calculator-container {
         flex: 1;
         display: flex;
@@ -160,7 +160,6 @@ button:hover {
         width: 100%;
         flex: none;
     }
-}
 
     .container {
         width: 95%;
@@ -179,6 +178,7 @@ button:hover {
         width: 100%;
         flex: none; /* 取消彈性設定，填滿全部寬度 */
     }
+}
 
 /* 對於手機和更小的裝置 */
 @media (max-width: 767px) {
@@ -189,3 +189,4 @@ button:hover {
         width: 95% !important;
     }
 }
+
