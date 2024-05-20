@@ -116,7 +116,7 @@ button {
 }
 
 button:hover {
-    background-color:  #777;
+    background-color: #777;
 }
 
 .calculator {
@@ -162,12 +162,6 @@ button:hover {
     }
 }
 
-/* 對於手機和更小的裝置 */
-@media (max-width: 767px) {
-    body {
-        font-size: 14px;
-    }
-
     .container {
         width: 95%;
         padding: 10px;
@@ -184,5 +178,14 @@ button:hover {
     .input-group button {
         width: 100%;
         flex: none; /* 取消彈性設定，填滿全部寬度 */
+    }
+
+/* 對於手機和更小的裝置 */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px !important;
+    }
+    .container {
+        width: 95% !important;
     }
 }
