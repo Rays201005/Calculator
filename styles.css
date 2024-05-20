@@ -16,6 +16,7 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
+    overflow: hidden; /* 防止內容超出容器範圍 */
 }
 
 .image-container {
@@ -29,11 +30,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4; /* 輕灰色背景，增加設計感同時與大多數圖片協調 */
+    background-color: #333; /* 深灰色背景，更接近左邊背景風格 */
 }
 
 .container {
-    background-color: #ffffff; /* 白色背景提升內容區域的清晰度 */
+    background-color: #444; /* 深灰色背景提升內容區域的清晰度 */
+    color: #fff; /* 白色文字提高對比度 */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -42,11 +44,11 @@ body {
 }
 
 h1, h2 {
-    color: #333333; /* 深灰色文字，更符合專業感 */
+    color: #ddd; /* 淺灰色文字，更符合整體風格 */
 }
 
 .calculator {
-    background-color: #eeeeee; /* 略深於容器的灰色，為界面層次添加微妙的區分 */
+    background-color: #555; /* 深灰色背景，增加界面層次 */    
     padding: 15px;
     margin-top: 20px;
     border-radius: 8px;
@@ -59,13 +61,13 @@ input, select, button {
     border: none;
     border-radius: 5px;
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
-    background-color: #ddd; /* 輸入框和按鈕使用統一的淡灰色背景 */
-    color: #333; /* 文字顏色 */
+    background-color: #666; /* 中灰色背景 */
+    color: #fff; /* 白色文字 */
     font-size: 24px; /* 更新字體大小為24px */
 }
 
 button {
-    background-color: #555; /* 深灰色按鈕背景 */
+    background-color: #777; /* 深灰色按鈕背景 */
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -73,11 +75,11 @@ button {
 }
 
 button:hover {
-    background-color: #333; /* 鼠標懸停時更深的灰色 */
+    bbackground-color: #888; /* 鼠標懸停時更深的灰色 */
 }
 
 #profitLossResult, #averageCostResult {
-    color: #000; /* 設置結果文字顏色為深色，以確保清晰可見 */
+    color: #fff; /* 白色結果文字，增強對比 */
     font-size: 24px; /* 增大結果顯示的字體大小 */
 }
 
@@ -90,7 +92,7 @@ button:hover {
 .input-group label {
     flex: 0 0 150px;  /* 給標籤一個固定的寬度 */
     margin-right: 10px;  /* 設置標籤和輸入欄位之間的間距 */
-    color: #333;  /* 深色文字，提高可讀性 */
+    color: #fff;  /* 白色文字 */
     font-size: 22px;  /* 增加標籤的字體大小 */
 }
 
@@ -99,14 +101,14 @@ button:hover {
     flex: 1;  /* 讓輸入欄位填滿剩餘空間 */
     padding: 8px;  /* 調整內邊距以適應更大的字體 */
     font-size: 22px;  /* 增加輸入欄位的字體大小 */
-    color: #333;  /* 確保輸入欄位文字也是深色 */
+    color: #fff;  /* 白色文字 */
 }
 
 button {
     padding: 12px 24px;
     font-size: 22px;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #777; /* 深灰色按鈕背景 */
     color: white;
     border: none;
     border-radius: 5px;
@@ -114,11 +116,11 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color:  #777;
 }
 
 .calculator {
-    border: 1px solid #ccc;
+    border: 1px solid #777;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
