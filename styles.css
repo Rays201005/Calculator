@@ -76,7 +76,7 @@ button {
 }
 
 button:hover {
-    bbackground-color: #888; /* 鼠標懸停時更深的灰色 */
+    background-color: #888; /* 鼠標懸停時更深的灰色 */
 }
 
 #profitLossResult, #averageCostResult {
